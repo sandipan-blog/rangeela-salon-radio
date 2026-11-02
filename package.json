@@ -1,0 +1,1 @@
+{"name":"rangeela-salon-radio","private":true,"type":"module","scripts":{"start":"node server.js","test":"node --test tests/*.test.js","verify:playlist":"node scripts/verify-playlist.mjs"}}

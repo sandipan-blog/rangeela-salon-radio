@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rangeela Salon Radio · 90s Hindi Gaane</title>
+<meta name="description" content="Rangeela Salon Radio: a retro 90s Indian salon radio playing Hindi film songs from 1990–2009, with moods, farmaish, dedications and Bhaiya the AI DJ.">
+<meta property="og:title" content="Rangeela Salon Radio · 90s Hindi Gaane">
+<meta property="og:description" content="Ek retro salon, ek purana radio, aur 90s ke Hindi gaane. Moods, farmaish, dedications aur Pappu Bhaiya ki Hinglish commentary.">
+<meta property="og:image" content="assets/og.svg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Yatra+One&family=Kalam&family=Special+Elite&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/styles.css">
+<link rel="stylesheet" href="src/scene.css">
+</head>
+<body>
+<a class="skip-link" href="#scene">Skip to radio</a>
+<header id="topbar">
+  <span class="logo">📻 Rangeela Salon Radio</span>
+  <nav>
+    <a href="#scene">Radio</a> ·
+    <a href="#moods">Moods</a> ·
+    <a href="#farmaish">Farmaish</a> ·
+    <a href="#dedication">Dedication</a> ·
+    <a href="#antakshari">Antakshari</a> ·
+    <a href="#diary">Diary</a> ·
+    <a href="#about">About</a> ·
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<section id="scene" aria-label="The salon scene">
+  <div class="wall-dado" aria-hidden="true"></div>
+  <div class="signboard">
+    <span class="sign-hindi">रंगीला हेयर कटिंग सैलून</span>
+    <span class="sign-eng">RANGEELA HAIR CUTTING SALON · A/C · Prop. Pappu Bhai</span>
+  </div>
+
+  <div class="fan-wrap" aria-hidden="true">
+    <svg viewBox="0 0 200 120" class="fan"><defs><linearGradient id="fanrod" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9ced2"/><stop offset="1" stop-color="#8a9096"/></linearGradient></defs>
+      <rect x="96" y="0" width="8" height="26" rx="3" fill="url(#fanrod)"/>
+      <g class="fan-blades">
+        <circle cx="100" cy="60" r="10" fill="#6b7178"/>
+        <path d="M100 60 C 70 45 55 20 85 14 C 105 11 112 40 100 60Z" fill="#7cbfae" stroke="#5e3a1a" stroke-width="2"/>
+        <path d="M100 60 C 130 75 145 100 115 106 C 95 109 88 80 100 60Z" fill="#7cbfae" stroke="#5e3a1a" stroke-width="2"/>
+        <path d="M100 60 C 115 30 140 15 146 45 C 150 65 121 72 100 60Z" fill="#8fd0bf" stroke="#5e3a1a" stroke-width="2"/>
+        <path d="M100 60 C 85 90 60 105 54 75 C 50 55 79 48 100 60Z" fill="#8fd0bf" stroke="#5e3a1a" stroke-width="2"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="window-wrap" aria-hidden="true">
+    <div class="window-frame">
+      <canvas id="rain-canvas" class="rain-layer"></canvas>
+      <div class="sky">
+        <div class="stars" aria-hidden="true"><i style="left:12%;top:8%"></i><i style="left:30%;top:22%;animation-delay:.7s"></i><i style="left:48%;top:6%;animation-delay:1.4s"></i><i style="left:66%;top:18%;animation-delay:2.1s"></i><i style="left:84%;top:10%;animation-delay:.3s"></i><i style="left:20%;top:38%;animation-delay:1.1s"></i><i style="left:58%;top:34%;animation-delay:1.9s"></i></div>
+        <svg class="outside" viewBox="0 0 300 220" preserveAspectRatio="xMidYMax slice">
+          <circle class="sun" cx="240" cy="40" r="18" fill="#ffd76e"/>
+          <rect x="0" y="150" width="300" height="70" fill="#b9a06a"/>
+          <rect x="0" y="145" width="300" height="8" fill="#8f7a4e"/>
+          <path d="M40 220 L40 160 C 40 120 80 120 80 160 L80 220Z" fill="#5e7d4a"/>
+          <ellipse cx="60" cy="130" rx="42" ry="34" fill="#6f9459"/>
+          <ellipse cx="38" cy="148" rx="26" ry="22" fill="#7ca463"/>
+          <ellipse cx="84" cy="146" rx="24" ry="20" fill="#648750"/>
+          <path d="M0 60 Q 60 78 130 64 T 300 70" stroke="#333" stroke-width="1.5" fill="none"/>
+          <path d="M0 74 Q 80 92 160 76 T 300 84" stroke="#333" stroke-width="1.5" fill="none"/>
+          <path d="M118 58 l-8 12 M132 55 l-5 10 M104 62 l-6 9" stroke="#1b1b1b" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M126 52 q6 -8 12 0 q-6 4 -12 0Z" fill="#15151a"/>
+          <g font-family="'Special Elite',monospace" font-size="9">
+            <rect x="170" y="86" width="118" height="26" fill="#f4a300" stroke="#5e3a1a" stroke-width="2" transform="rotate(-2 229 99)"/>
+            <text x="178" y="99" fill="#5e3a1a" transform="rotate(-2 229 99)">PCO · STD · ISD</text>
+            <text x="186" y="108" fill="#5e3a1a" font-size="7" transform="rotate(-2 229 99)">PUBLIC CALL OFFICE</text>
+          </g>
+        </svg>
+      </div>
+      <div class="window-mullion-v"></div>
+      <div class="window-mullion-h"></div>
+    </div>
+  </div>
+
+  <div class="tubelight-wrap"><div class="tubelight" id="tubelight"></div><div class="tubelight-holder l"></div><div class="tubelight-holder r"></div></div>
+
+  <div class="mirror-wrap">
+    <div class="mirror">
+      <div class="bulbs" aria-hidden="true">
+        <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+        <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+      </div>
+      <div class="glass">
+        <div class="mirror-room" aria-hidden="true">
+          <i class="mr-tile"></i><i class="mr-tile"></i><i class="mr-tile"></i><i class="mr-tile"></i><i class="mr-tile"></i>
+          <span class="mr-chair"></span>
+          <span class="mr-bulb-row"></span>
+        </div>
+        <div class="streak"></div>
+        <div class="glass-sheen"></div>
+        <div class="glass-dust" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="dj-bubble hidden" id="dj-bubble" aria-live="polite">
+      <span class="dj-tag">Bhaiya</span>
+      <p class="dj-text" id="dj-text"></p>
+    </div>
+  </div>
+
+  <div class="poster poster-a" aria-hidden="true">
+    <svg viewBox="0 0 120 170">
+      <rect width="120" height="170" fill="#e8b923"/>
+      <circle cx="60" cy="62" r="34" fill="#c8102e"/>
+      <path d="M30 120 Q60 96 90 120 L90 150 L30 150Z" fill="#1b2238"/>
+      <text x="60" y="66" text-anchor="middle" font-family="'Rozha One',serif" font-size="15" fill="#fff4dc">दिल</text>
+      <text x="60" y="128" text-anchor="middle" font-family="'Rozha One',serif" font-size="13" fill="#fff4dc">DIL KA</text>
+      <text x="60" y="142" text-anchor="middle" font-family="'Rozha One',serif" font-size="13" fill="#c8102e">RADIO</text>
+    </svg>
+  </div>
+  <div class="poster poster-b" aria-hidden="true">
+    <svg viewBox="0 0 120 170">
+      <rect width="120" height="170" fill="#c8102e"/>
+      <path d="M20 40 h80 v14 h-80z M40 22 h40 v14 h-40z" fill="#f4a300"/>
+      <path d="M28 90 q32 -34 64 0 q-32 22 -64 0z" fill="#fff4dc"/>
+      <text x="60" y="136" text-anchor="middle" font-family="'Rozha One',serif" font-size="12" fill="#fff4dc">PYAAR KI</text>
+      <text x="60" y="152" text-anchor="middle" font-family="'Rozha One',serif" font-size="12" fill="#e8b923">CHAI</text>
+    </svg>
+  </div>
+
+  <div class="calendar" id="calendar" aria-label="Wall calendar">
+    <div class="cal-top" id="cal-month"></div>
+    <div class="cal-day" id="cal-day"></div>
+    <div class="cal-week" id="cal-week"></div>
+    <svg class="cal-flower" viewBox="0 0 40 16" aria-hidden="true">
+      <path d="M4 12 Q12 2 20 10 T36 8" stroke="#c8102e" stroke-width="2" fill="none"/>
+      <circle cx="12" cy="7" r="3" fill="#f4a300"/><circle cx="28" cy="6" r="3" fill="#c8102e"/>
+    </svg>
+  </div>
+
+  <div class="ratecard" aria-label="Rate card">
+    <h3>Rate Card</h3>
+    <ul>
+      <li>Hair Cut <span>₹15</span></li>
+      <li>Shave <span>₹5</span></li>
+      <li>Champi <span>₹10</span></li>
+      <li>Facial <span>₹25</span></li>
+      <li>Bachchon ka Hair Cut <span>₹10</span></li>
+    </ul>
+  </div>
+
+  <div class="small-sign sign-nocredit">No Credit<br>Aaj Nagad · Kal Udhaar</div>
+  <div class="towel-hook"><svg viewBox="0 0 60 80" aria-hidden="true"><path d="M20 8 h20 v10 h-20z" fill="#5e3a1a"/><path d="M14 18 q16 -8 32 0 l4 52 q-20 8 -40 0Z" fill="#f4fbff" stroke="#b9c6cc" stroke-width="2"/></svg></div>
+
+  <div class="tv-shelf-wrap">
+    <div class="crt-tv">
+      <div class="tv-screen">
+        <div id="yt-player"></div>
+        <div class="crt-glass" aria-hidden="true"></div>
+        <div class="testcard" id="testcard">
+          <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <span class="testcard-name">RANGEELA TV</span>
+        </div>
+      </div>
+      <div class="tv-side">
+        <div class="tv-knob"></div>
+        <div class="tv-knob small"></div>
+        <div class="tv-grille"></div>
+      </div>
+    </div>
+    <div class="shelf"></div>
+  </div>
+
+  <div class="counter">
+    <div class="radio" id="radio" aria-label="Transistor radio player">
+      <div class="dial-window">
+        <span class="dial-scale">88</span><span class="dial-scale">92</span><span class="dial-scale">96</span><span class="dial-scale">100</span><span class="dial-scale">104</span><span class="dial-scale">108</span>
+        <div class="dial-glass" aria-hidden="true"></div>
+        <div class="needle" id="needle" aria-hidden="true"></div>
+      </div>
+      <div class="radio-body">
+        <button class="power-knob" id="power-knob" aria-label="Power and volume knob">Radio chalu karo</button>
+        <div class="radio-buttons">
+          <button class="chrome-btn" id="btn-prev" aria-label="Previous song">⏮</button>
+          <button class="chrome-btn" id="btn-toggle" aria-label="Play or pause">⏯</button>
+          <button class="chrome-btn" id="btn-next" aria-label="Next song">⏭</button>
+        </div>
+        <span class="onair" id="onair">ON AIR</span>
+        <div class="grille" id="grille"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    <div class="cassette" id="cassette">
+      <div class="reel" aria-hidden="true"></div>
+      <div class="cass-label" id="cass-label">Rangeela C-90</div>
+      <div class="reel" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <div class="chair" aria-hidden="true">
+    <svg viewBox="0 0 160 200">
+      <ellipse cx="80" cy="192" rx="52" ry="7" fill="#3a2a1a"/>
+      <rect x="74" y="120" width="12" height="70" fill="url(#chromeg)"/>
+      <defs><linearGradient id="chromeg" x1="0" x2="1"><stop offset="0" stop-color="#d9dde0"/><stop offset=".5" stop-color="#9aa1a6"/><stop offset="1" stop-color="#d9dde0"/></linearGradient></defs>
+      <rect x="44" y="96" width="72" height="34" rx="12" fill="#c8102e"/>
+      <rect x="46" y="100" width="68" height="10" rx="5" fill="#e0435c"/>
+      <rect x="30" y="60" width="10" height="60" rx="5" fill="url(#chromeg)"/>
+      <rect x="120" y="60" width="10" height="60" rx="5" fill="url(#chromeg)"/>
+      <path d="M28 116 q52 -18 104 0 l-6 22 q-46 -14 -92 0Z" fill="#c8102e"/>
+      <path d="M30 118 q50 -16 100 0 l-5 18 q-45 -13 -90 0Z" fill="#a80d26" opacity=".55"/>
+      <rect x="60" y="150" width="40" height="8" rx="4" fill="url(#chromeg)"/>
+      <rect x="50" y="158" width="8" height="34" rx="4" fill="url(#chromeg)"/>
+      <rect x="102" y="158" width="8" height="34" rx="4" fill="url(#chromeg)"/>
+      <ellipse cx="80" cy="112" rx="34" ry="9" fill="rgba(255,255,255,.14)"/>
+    </svg>
+  </div>
+</section>
+
+<section id="moods" aria-label="Moods">
+  <h2>Moods</h2>
+  <p class="section-note">Manzar chuno, bhaiya cassette badal denge.</p>
+  <div class="mood-grid" id="mood-grid">
+    <!-- filled by main.js -->
+  </div>
+  <button class="mood-all" id="mood-all">📻 Sab Gaane</button>
+</section>
+
+<section id="farmaish" aria-label="Farmaish">
+  <h2>Farmaish · Ask Bhaiya</h2>
+  <p class="section-note">Salon ki chitthi likho, bhaiya radio pe bajayenge.</p>
+  <div class="chitthi">
+    <div class="chitthi-head">
+      <span class="chitthi-stamp">📮 Farmaish</span>
+      <span class="chitthi-to">To: Pappu Bhaiya, Rangeela Salon</span>
+    </div>
+    <textarea id="farmaish-text" rows="3" placeholder="Bhaiya, ek gaana bajao… jaise 'baarish wale gaane' ya 'Kumar Sanu'"></textarea>
+    <div class="chitthi-chips" id="farmaish-chips">
+      <button class="chip" data-q="Baarish wale gaane">🌧️ Baarish wale gaane</button>
+      <button class="chip" data-q="Kumar Sanu">🎤 Kumar Sanu</button>
+      <button class="chip" data-q="90s romance">💞 90s romance</button>
+      <button class="chip" data-q="Road trip pe chalo">🛵 Road trip pe chalo</button>
+      <button class="chip" data-q="Kuch sad sa">💔 Kuch sad sa</button>
+    </div>
+    <div class="chitthi-actions">
+      <button id="farmaish-send" class="btn-primary">Farmaish bhejo</button>
+      <a href="#farmaish" id="farmaish-cancel" class="hidden">Rehne do</a>
+      <span id="farmaish-timer" class="hidden" aria-live="polite">Bhaiya soch rahe hain… 12s</span>
+    </div>
+    <div id="farmaish-result" class="farmaish-result hidden" aria-live="polite"></div>
+  </div>
+</section>
+<section id="antakshari" aria-label="Antakshari with Bhaiya">
+  <h2>अंताक्षरी · Antakshari with Bhaiya</h2>
+  <p class="section-note">Bhaiya gaana bajayenge, aakhri akshar pe tumhe gaana bolna hai. 30 second, 3 zindagiyan!</p>
+  <div class="anti-rules">
+    <ol>
+      <li>Bhaiya ek gaana bajate hain — uske naam ka <strong>aakhri akshar</strong> tumhara letter hai.</li>
+      <li>Usi akshar se shuru hone wala koi bhi Hindi filmi gaana bolo (likho ya 🎤 bolo) — 30 second mein.</li>
+      <li>Sahi jawab = 1 point aur gaana bajta hai. Galat ya late = ek diya bujh jaati hai.</li>
+      <li>Koi gaana do baar nahi chalega. Bhaiya ke paas letter ka gaana na ho toh <strong>+2 points</strong> tumhare!</li>
+    </ol>
+  </div>
+  <div class="blackboard" id="anti-board">
+    <div class="anti-top">
+      <div class="anti-akshar" aria-live="polite">
+        <span class="anti-dev" id="anti-akshar-dev">?</span>
+        <span class="anti-rom" id="anti-akshar-rom">Aa jao, khelte hain!</span>
+      </div>
+      <div class="anti-stats">
+        <div class="anti-score">Score: <b id="anti-score">0</b> · Best: <b id="anti-best">0</b></div>
+        <div class="anti-lives" id="anti-lives"><span class="diya">🪔</span><span class="diya">🪔</span><span class="diya">🪔</span></div>
+      </div>
+      <div class="anti-incense" id="anti-incense" title="Time bacha hai"><span class="incense-stick"></span><span class="incense-smoke">💨</span></div>
+    </div>
+    <div class="anti-status" id="anti-status" aria-live="polite">Ready? "Shuru karo Bhaiya" dabao.</div>
+    <div class="anti-form">
+      <input type="text" id="anti-input" placeholder="Gaana bolo…" autocomplete="off" disabled>
+      <button id="anti-send" class="btn-primary" disabled>Bolo!</button>
+      <button id="anti-mic" class="anti-mic" type="button" aria-label="Bol ke jawab do">🎤</button>
+    </div>
+    <div class="anti-actions">
+      <button id="anti-start" class="btn-primary">▶ Shuru karo Bhaiya</button>
+      <button id="anti-end" class="hidden">Game khatam</button>
+    </div>
+    <div class="anti-used-wrap">
+      <h3>Chale hue gaane</h3>
+      <ul class="anti-used" id="anti-used"></ul>
+    </div>
+  </div>
+</section>
+
+<section id="dedication" aria-label="Dedication">
+  <h2>Dedication · Purane Zamane Wala</h2>
+  <p class="section-note">"Yeh gaana Jhumri Telaiya se Rahul ki taraf se Priya ke liye…"</p>
+  <div class="postcard">
+    <div class="pc-head">
+      <div class="pc-stamp">
+        <svg viewBox="0 0 40 46" aria-hidden="true"><rect width="40" height="46" rx="3" fill="var(--poster-red)"/><path d="M8 30 Q20 10 32 30" stroke="var(--cream)" stroke-width="2" fill="none"/><circle cx="20" cy="16" r="4" fill="var(--turmeric)"/></svg>
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="pc-postmark" id="pc-postmark"></div>
+    </div>
+    <div class="pc-body">
+      <div class="pc-fields">
+        <label>Aapka naam<input id="ded-from" maxlength="40" placeholder="Rahul"></label>
+        <label>Shehar / Gaon (optional)<input id="ded-town" maxlength="40" placeholder="Jhumri Telaiya"></label>
+        <label>Kiske liye<input id="ded-to" maxlength="40" placeholder="Priya"></label>
+      </div>
+      <div class="pc-song">
+        <label>Gaana chuno</label>
+        <input id="ded-search" type="search" placeholder="Gaana ya film dhoondo…" autocomplete="off">
+        <ul id="ded-list" class="ded-list" role="listbox"></ul>
+      </div>
+      <div class="pc-actions">
+        <button id="ded-send" class="btn-primary">💌 Dedication bhejo</button>
+      </div>
+      <p id="ded-error" class="ded-error hidden" aria-live="polite"></p>
+      <div id="ded-share" class="ded-share hidden" aria-live="polite">
+        <p>💌 Dedication tayyar hai! Yeh link dost ko bhejo:</p>
+        <div class="share-row">
+          <input id="ded-link" readonly>
+          <button id="ded-copy" class="chip">Copy link</button>
+          <a id="ded-wa" class="chip" target="_blank" rel="noopener">Share on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="diary" aria-label="Aaj ki Diary">
+  <h2>Aaj ki Diary</h2>
+  <p class="section-note">Bhaiya ki roz ki khaat-khaati — pasandida gaane, aaj ki playlist aur aapke apne gaane.</p>
+  <div class="diary">
+    <div class="diary-page">
+      <div class="diary-ring"></div><div class="diary-ring r2"></div><div class="diary-ring r3"></div>
+
+      <div class="diary-block">
+        <h3>❤️ Pasandida Gaane</h3>
+        <ul id="fav-list" class="diary-list"></ul>
+        <p id="fav-empty" class="diary-empty">Abhi koi pasandida gaana nahi. Now Playing ke ❤️ dabao!</p>
+      </div>
+
+      <div class="diary-block">
+        <h3>📻 Aaj Bajaye Gaye</h3>
+        <ul id="played-list" class="diary-list"></ul>
+        <p id="played-empty" class="diary-empty">Aaj radio abhi chalu nahi hua.</p>
+      </div>
+
+      <div class="diary-block">
+        <h3>➕ Apna Gaana Jodo</h3>
+        <div class="add-song">
+          <input id="add-url" type="url" placeholder="YouTube ka link paste karo (watch?v=… ya youtu.be/…)">
+          <input id="add-title" maxlength="80" placeholder="Gaane ka naam">
+          <button id="add-send" class="btn-primary">Diary mein likho</button>
+          <p id="add-status" class="diary-empty hidden" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" aria-label="About">
+  <div class="magazine">
+    <h2>Hamare Baare Mein</h2>
+    <p class="mag-deck">Rangeela Salon Radio · Film Magazine Issue #90</p>
+    <div class="mag-cols">
+      <div>
+        <p>Kabhi kisi chhote shehar ki gali mein gaye hain? Jahan mint-green deewar, bada mirror aur uske 10 bulbs, ceiling fan ki ahista goonj, aur counter pe ek purana transistor radio. Rangeela Salon Radio wahi mahaul hai — Pappu Bhai ka salon, jahan hair cut ke saath 90s ke Hindi gaane free mein chalte hain.</p>
+        <p>Yahan 1990 se 2009 tak ke gaane bajte hain — woh zamana jab cassette hoti thi, radio pe farmaishi hoti thi, aur har gaana poora suna jaata tha. Moods chuno: Baarish, Romance, Masti, Dard Bhare, Road Trip ya Chai Time. Farmaish bhejo, dedication bhejo — purane Akashvani style mein.</p>
+        <p>Ek baat saaf: hum koi gaana apne paas rakhte ya host nahi karte. Har gaana official YouTube upload hai, YouTube ke apne player mein CRT TV par chalta hai. Hum sirf salon ka mahaul, radio ke controls aur bhaiya ki baatein banate hain.</p>
+        <blockquote>"Baal to wapas aa jaate hain, gaane wapas nahi aate — isliye hum dono sambhal ke sunein."</br><span>— Pappu Bhai, Prop.</span></blockquote>
+      </div>
+      <aside class="mag-how">
+        <h3>Kaise Kaam Karta Hai?</h3>
+        <ol>
+          <li>📻 Radio chalu karo — power knob dabao</li>
+          <li>🎚️ Mood chuno — cassette card se</li>
+          <li>💌 Farmaish ya dedication bhejo — bhaiya radio pe bolenge</li>
+          <li>☕ Chai lo, baith jao</li>
+        </ol>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-label="FAQ">
+  <h2>Sawaal-Jawaab (FAQ)</h2>
+  <p class="section-note">Index cards ki tarah — ek kholo, ek sawaal ka jawab milo.</p>
+  <details class="index-card">
+    <summary>Kya account banana padega?</summary>
+    <p>Nahi! Na login, na app, na payment. Browser kholo, power knob dabao, gaane shuru.</p>
+  </details>
+  <details class="index-card">
+    <summary>Gaane kahan se aate hain?</summary>
+    <p>Sabhi gaane official YouTube videos hain jo YouTube ke apne embedded player mein chalte hain — salon ke CRT TV par. Hum khud koi music download, host ya proxy nahi karte.</p>
+  </details>
+  <details class="index-card">
+    <summary>Bhaiya kaun hai?</summary>
+    <p>Pappu Bhai — salon ke maalik aur radio wale. Jab AI service available ho, unki Hinglish lines AI (GLM) likhta hai; warna hamari apni likhi built-in lines chalti hain. Yaad rakho: AI-written hone par bhi yeh sirf mazaak-mizaj ke lines hain, koi asli insaan nahi bol raha.</p>
+  </details>
+  <details class="index-card">
+    <summary>Kya mobile pe chalega?</summary>
+    <p>Haan, browser mein hi chalega. Pehle tap zaroori hai (browser rule hai), uske baad gaane chalte rahenge. Ek limit: phone lock hone par gaana ruk sakta hai — platform ki limit hai, humari nahi.</p>
+  </details>
+  <details class="index-card">
+    <summary>Kuch gaane skip kyun ho jaate hain?</summary>
+    <p>Kuch video owners embedding allow nahi karte, ya video hat jaata hai. Aise gaane radio khud skip kar deti hai — "Yeh gaana abhi nahi chal sakta, agla…" bol kar. Aap kuch mat karo, bhaiya sambhal lenge.</p>
+  </details>
+  <details class="index-card">
+    <summary>Mera data kahan jaata hai?</summary>
+    <p>Aapke pasandida gaane, diary aur settings sirf aapke browser (localStorage) mein rehte hain — kahin bheje nahi jaate. Jab AI DJ on ho, to gaane ka naam aur dedication ke naam AI service ko line likhne ke liye jaate hain. Bas.</p>
+  </details>
+  <details class="index-card">
+    <summary>Gaana kaise suggest karein?</summary>
+    <p>Diary section mein "Apna Gaana Jodo" se YouTube link paste karo — video check hoke playlist mein jud jaayega. Ya Farmaish mein bhaiya se mango!</p>
+  </details>
+</section>
+
+<footer id="footer">
+  <div class="footer-sign">
+    <span class="fs-hindi">रंगीला सैलून रेडियो</span>
+    <span class="fs-eng">RANGEELA SALON RADIO</span>
+  </div>
+  <p class="footer-made">Made with ❤️ and chai · <span id="footer-year"></span></p>
+  <nav class="footer-social" id="footer-social" aria-label="Social links"></nav>
+  <p class="footer-credit">Songs © their respective owners, played via YouTube.</p>
+</footer>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
